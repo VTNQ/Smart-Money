@@ -18,7 +18,7 @@ public class DBConnection{
         }
         return connection;
     }
-    public static void DisConnection() throws SQLException {
+    public static void DisConnection() {
         if(connection!=null){
             try {
                 connection.close();

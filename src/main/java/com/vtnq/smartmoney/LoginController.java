@@ -92,6 +92,8 @@ public class LoginController implements Initializable {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
+        }finally {
+            DBConnection.DisConnection();
         }
 
     }
